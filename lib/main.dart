@@ -5,6 +5,7 @@ import 'package:responsive_framework/responsive_framework.dart';
 import 'package:resposive_hvmms/components/colors.dart';
 import 'package:resposive_hvmms/ui/block_wrapper.dart';
 import 'package:resposive_hvmms/ui/blocks.dart';
+import 'package:resposive_hvmms/ui/carousel/carousel.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,10 +49,9 @@ List<Widget> blocks = [
       minWidth: 1200,
       defaultScale: true,
       mediaQueryData: const MediaQueryData(size: Size(1200, 640)),
-      child: RepaintBoundary(child: EmptyWidget())),
+      child: RepaintBoundary(child: Carousel())),
   const BlockWrapper(GetStarted()),
   const BlockWrapper(Features()),
-  const BlockWrapper(EmptyWidget()),
   const BlockWrapper(FastDevelopment()),
   const BlockWrapper(BeautifulUI()),
   const BlockWrapper(NativePerformance()),
