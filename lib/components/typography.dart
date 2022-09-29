@@ -42,3 +42,16 @@ const TextStyle carouselWhiteTextStyle = TextStyle(
         blurRadius: 2,
       )
     ]);
+
+const TextStyle footerLinkTextStyle = TextStyle(
+    fontSize: 14,
+    color: textWhiteDarkBackgroundColor,
+    height: 1.6,
+    fontFamily: 'Roboto');
+
+const TextStyle linkTitleTextStyle = TextStyle(
+    fontSize: 20, color: linkTitleColor, height: 1.6, fontFamily: fontFamily);
+
+// Simple
+const TextStyle titleTextStyle = TextStyle(
+    fontSize: 36, color: textTitleColor, height: 1.6, fontFamily: fontFamily);
