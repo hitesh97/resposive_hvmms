@@ -1,6 +1,6 @@
 # resposive_hvmms
 
-A new Flutter project.
+Home to my flutter experiment and trial of single codebase reposive web and android app.
 
 ## Getting Started
 
