@@ -5,7 +5,7 @@ import 'package:responsive_framework/responsive_framework.dart';
 import 'package:resposive_hvmms/components/colors.dart';
 import 'package:resposive_hvmms/ui/block_wrapper.dart';
 import 'package:resposive_hvmms/ui/blocks.dart';
-import 'package:resposive_hvmms/ui/carousel/carousel.dart';
+import 'package:resposive_hvmms/components/carousel/carousel.dart';
 
 class FlutterWebApp extends StatelessWidget {
   const FlutterWebApp({Key? key}) : super(key: key);

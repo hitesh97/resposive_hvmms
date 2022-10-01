@@ -4,7 +4,7 @@ import 'package:responsive_framework/responsive_framework.dart';
 import 'package:resposive_hvmms/components/colors.dart';
 import 'package:resposive_hvmms/components/typography.dart';
 import 'package:resposive_hvmms/model/model_package.dart';
-import 'package:resposive_hvmms/packages_data.dart';
+import 'package:resposive_hvmms/data/packages_data.dart';
 import 'package:resposive_hvmms/utils/utils.dart';
 
 class MenuBar extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'model/model_package.dart';
+import '../model/model_package.dart';
 
 List<PackageModel> favoritePackages = [
   PackageModel(

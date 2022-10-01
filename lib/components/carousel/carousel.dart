@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:resposive_hvmms/ui/carousel/carousel_slide_1.dart';
-import 'package:resposive_hvmms/ui/carousel/carousel_slide_2.dart';
-import 'package:resposive_hvmms/ui/carousel/carousel_slide_3.dart';
-import 'package:resposive_hvmms/ui/carousel/carousel_slide_4.dart';
+import 'package:resposive_hvmms/components/carousel/carousel_slide_1.dart';
+import 'package:resposive_hvmms/components/carousel/carousel_slide_2.dart';
+import 'package:resposive_hvmms/components/carousel/carousel_slide_3.dart';
+import 'package:resposive_hvmms/components/carousel/carousel_slide_4.dart';
 
 class Carousel extends StatefulWidget {
   static int slideDuration = 6400;

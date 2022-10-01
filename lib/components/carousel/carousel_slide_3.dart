@@ -1,49 +1,51 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
-import 'package:resposive_hvmms/ui/carousel/carousel_text.dart';
-import 'package:resposive_hvmms/ui/carousel/model_carousel_item_animation.dart';
+import 'package:resposive_hvmms/components/carousel/carousel_text.dart';
+import 'package:resposive_hvmms/components/carousel/model_carousel_item_animation.dart';
 
 import 'animation_slide_up_down_fade.dart';
 
-class CarouselSlide4 extends StatefulWidget {
+class CarouselSlide3 extends StatefulWidget {
   final int slideDuration;
 
-  const CarouselSlide4({Key? key, required this.slideDuration})
+  const CarouselSlide3({Key? key, required this.slideDuration})
       : super(key: key);
 
   @override
-  _CarouselSlide4State createState() => _CarouselSlide4State();
+  _CarouselSlide3State createState() => _CarouselSlide3State();
 }
 
-class _CarouselSlide4State extends State<CarouselSlide4>
+class _CarouselSlide3State extends State<CarouselSlide3>
     with SingleTickerProviderStateMixin {
   late Animation<double> animation;
   late AnimationController animationController;
 
   List<SlideItemAnimationModel> slideItems = [
     SlideItemAnimationModel(
-        id: "slide_4-bg",
+        id: "slide_3-bg",
         entryDuration: 800,
         exitDuration: 500,
         entry: 0,
-        exit: 166),
+        exit: 162),
     SlideItemAnimationModel(
-        id: "slide_4-layer_1",
+        id: "slide_3-layer_1",
         entryDuration: 800,
         exitDuration: 500,
-        entry: 14,
-        exit: 176),
+        entry: 12,
+        exit: 169),
     SlideItemAnimationModel(
-        id: "slide_4-layer_2",
+        id: "slide_3-layer_2",
         entryDuration: 800,
         exitDuration: 500,
-        entry: 25,
-        exit: 171),
+        entry: 23,
+        exit: 175),
     SlideItemAnimationModel(
-        id: "slide_4-text",
+        id: "slide_3-text",
         entryDuration: 800,
         exitDuration: 500,
-        entry: 37,
-        exit: 159),
+        entry: 34,
+        exit: 157),
   ];
   final slideItemOffset = const Offset(0, 60);
 
@@ -75,46 +77,46 @@ class _CarouselSlide4State extends State<CarouselSlide4>
       child: Stack(
         children: <Widget>[
           Positioned(
-            left: 345,
-            top: 132,
-            width: 620,
-            height: 345,
+            left: 400,
+            top: 117,
+            width: 420,
+            height: 395,
             child: WidgetSlideUpDownFadeAnimation(
-              duration: getSlideItemAnimationDuration("slide_4-bg", slideItems),
+              duration: getSlideItemAnimationDuration("slide_3-bg", slideItems),
               direction:
-                  getSlideItemAnimationVisibility("slide_4-bg", slideItems),
+                  getSlideItemAnimationVisibility("slide_3-bg", slideItems),
               offset: slideItemOffset,
               child:
-                  Image.asset("assets/images/slide_4-bg.jpg", fit: BoxFit.fill),
+                  Image.asset("assets/images/slide_3-bg.jpg", fit: BoxFit.fill),
             ),
           ),
           Positioned(
-            left: 232,
-            top: 108,
-            width: 735,
-            height: 428,
+            left: 260,
+            top: 95,
+            width: 801,
+            height: 429,
             child: WidgetSlideUpDownFadeAnimation(
               duration:
-                  getSlideItemAnimationDuration("slide_4-layer_1", slideItems),
+                  getSlideItemAnimationDuration("slide_3-layer_1", slideItems),
               direction: getSlideItemAnimationVisibility(
-                  "slide_4-layer_1", slideItems),
+                  "slide_3-layer_1", slideItems),
               offset: slideItemOffset,
-              child: Image.asset("assets/images/slide_4-layer_1.png",
+              child: Image.asset("assets/images/slide_3-layer_1.png",
                   fit: BoxFit.fill),
             ),
           ),
           Positioned(
-            left: 187,
-            top: 80,
-            width: 901,
-            height: 474,
+            left: 194,
+            top: 73,
+            width: 906,
+            height: 440,
             child: WidgetSlideUpDownFadeAnimation(
               duration:
-                  getSlideItemAnimationDuration("slide_4-layer_2", slideItems),
+                  getSlideItemAnimationDuration("slide_3-layer_2", slideItems),
               direction: getSlideItemAnimationVisibility(
-                  "slide_4-layer_2", slideItems),
+                  "slide_3-layer_2", slideItems),
               offset: slideItemOffset,
-              child: Image.asset("assets/images/slide_4-layer_2.png",
+              child: Image.asset("assets/images/slide_3-layer_2.png",
                   fit: BoxFit.fill),
             ),
           ),
@@ -135,11 +137,11 @@ class _CarouselSlide4State extends State<CarouselSlide4>
               alignment: Alignment.center,
               child: WidgetSlideUpDownFadeAnimation(
                 duration:
-                    getSlideItemAnimationDuration("slide_4-text", slideItems),
+                    getSlideItemAnimationDuration("slide_3-text", slideItems),
                 direction:
-                    getSlideItemAnimationVisibility("slide_4-text", slideItems),
+                    getSlideItemAnimationVisibility("slide_3-text", slideItems),
                 offset: slideItemOffset,
-                child: slide4Text,
+                child: slide3Text,
               ),
             ),
           ),

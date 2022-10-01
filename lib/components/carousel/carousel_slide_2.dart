@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:resposive_hvmms/ui/carousel/carousel_text.dart';
-import 'package:resposive_hvmms/ui/carousel/model_carousel_item_animation.dart';
+import 'package:resposive_hvmms/components/carousel/carousel_text.dart';
+import 'package:resposive_hvmms/components/carousel/model_carousel_item_animation.dart';
 
 import 'animation_slide_up_down_fade.dart';
 
